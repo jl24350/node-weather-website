@@ -9,7 +9,7 @@ const app = express()
 console.log("This is a test")
 const pubPath = path.join(__dirname, '../public')
 const partialsPath = path.join(__dirname, '/partials')
-const viewsPath = path.join(__dirname, './views')
+const viewsPath = path.join(__dirname, './src/views')
 const port = process.env.PORT || 3000
 
 
