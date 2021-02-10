@@ -18,11 +18,9 @@ weatherForm.addEventListener('submit',(e)=>{
           messageOne.textContent = data.error
         }
         else{
-            const location = JSON.stringify(data.location)
-            const temperature = JSON.stringify(data.temperature)
-          messageOne.textContent = JSON.stringify(data)
+            messageOne.textContent = "In wonderful " + data.location
+            messageTwo.textContent = "It is " + data.forcast.temp + ", but it feels like " + data.forcast.feels
         }
-        
     })
 })
 
