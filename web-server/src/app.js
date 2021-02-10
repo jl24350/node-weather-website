@@ -9,6 +9,7 @@ const app = express()
 //Paths for express
 const pubPath = path.join(__dirname, '../public')
 const partialsPath = path.join(__dirname, '/partials')
+const port = process.env.PORT || 3000
 
 
 
@@ -85,6 +86,6 @@ app.get('*', (req, res) =>{
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
