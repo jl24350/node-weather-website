@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000
 
 
 app.set('view engine', 'hbs')
-app.set('viws', viewsPath)
+app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
 app.use(express.static(pubPath))
