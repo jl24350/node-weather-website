@@ -1,5 +1,4 @@
 const path = require('path')
-const { response } = require('express')
 const express = require('express')
 const hbs = require('hbs')
 const forecast = require('./utils/forecast.js')
@@ -10,11 +9,13 @@ const app = express()
 console.log("This is a test")
 const pubPath = path.join(__dirname, '../public')
 const partialsPath = path.join(__dirname, '/partials')
+const viewsPath = path.join(__dirname, './views')
 const port = process.env.PORT || 3000
 
 
 
 app.set('view engine', 'hbs')
+app.set('viws', viewsPath)
 hbs.registerPartials(partialsPath)
 
 app.use(express.static(pubPath))
