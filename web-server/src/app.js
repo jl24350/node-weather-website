@@ -7,6 +7,7 @@ const geocode = require('./utils/geocode.js')
 
 const app = express()
 //Paths for express
+console.log("This is a test")
 const pubPath = path.join(__dirname, '../public')
 const partialsPath = path.join(__dirname, '/partials')
 const port = process.env.PORT || 3000
