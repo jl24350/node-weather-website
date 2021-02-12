@@ -23,22 +23,19 @@ app.use(express.static(pubPath))
 app.get('', (req, res) =>{
 
     res.render('index', {
-        title: 'Weather app',
-        name: 'Jorge Ledesma'
+        title: 'Check the weather anywhere! ',
     }) 
 })
 
 app.get('/help', (req, res) => {
     res.render('help',{
-        title: 'New Help page',
-        name: 'Jorge Ledesma'
+        title: 'Help',
     } )
 })
 
 app.get('/about', (req, res) => {
     res.render('about',{
-        title: 'New About page',
-        name:'Jorge Ledesma'
+        title: 'About',
     } )
 })
 
