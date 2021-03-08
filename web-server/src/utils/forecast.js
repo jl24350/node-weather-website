@@ -14,7 +14,9 @@ const forecast = (lat, long, callback) => {
         else{
             callback(undefined,{
                 temp: response.body.current.temperature,
-                feels: response.body.current.feelslike
+                feels: response.body.current.feelslike,
+                desc: response.body.current.weather_descriptions,
+                img: response.body.current.weather_icons
             })
         
         }
