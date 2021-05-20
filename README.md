@@ -1,6 +1,6 @@
 # node-weather-website
 
-#Description
+# Description
 
 This is the source code for a web app developed by Jorge Ledesma, it can be found [here] 
 (https://jledesma-njs-weather-app.herokuapp.com/).
